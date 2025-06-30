@@ -1,25 +1,25 @@
 FROM python:3.12-slim
 
-# システムパッケージのインストール（git, ffmpeg）
+# Install system packages (git, ffmpeg)
 RUN apt-get update \
   && apt-get install -y git ffmpeg \
   && rm -rf /var/lib/apt/lists/*
 
-# 作業ディレクトリ
+# Set working directory
 WORKDIR /workspace
 
-# JupyterLabとpipの最新化
+# Upgrade pip and install JupyterLab
 RUN pip install --upgrade pip && pip install jupyterlab
 
-# Pythonパッケージ
+# Install Python packages
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Jupyterカーネル登録（わかりやすい名前に！）
-RUN python -m ipykernel install --sys-prefix --name "nanogpt312" --display-name "NanoGPT用Python3.12"
+# Register Jupyter kernel (use a clear, friendly name!)
+RUN python -m ipykernel install --sys-prefix --name "nanogpt312" --display-name "NanoGPT Python 3.12"
 
-# ポート公開
+# Expose JupyterLab port
 EXPOSE 8888
 
-# JupyterLab起動
+# Launch JupyterLab
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser"]
