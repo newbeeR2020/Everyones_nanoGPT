@@ -1,12 +1,9 @@
-# **LICENSE**
+It is based on Andrej Karpathy’s nano-GPT. The original source is free license and allows commercial use.
 
-Creative Commons Attribution-NonCommercial 4.0 International Public License
+https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing
 
-This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
-To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA. For commercial use (such as redistribution or use in paid seminars or corporate training), please consult the copyright holder in advance: 
-hayato.hongo@everyonesai.org
+It uses a bigram model, where each token is just one character. Also, the internal structure is very simple.  
+The training text dataset is Shakespeare’s writings. Since they are very old, they are copyright-free.
 
-日本語訳: 
-この教材は クリエイティブ・コモンズ 表示-非営利 4.0 国際 ライセンスの下に提供されています。
-https://creativecommons.org/licenses/by-nc/4.0/deed.ja
-商用利用（再配布や有料セミナー・企業研修での利用等）をご希望の場合は、事前に著作権者までご相談ください：[hayato.hongo@everyonesai.org]
+Compared to the real GPT-2, it’s quite basic. But start here to master the GPT basics.  
+In just 2-4 minutes of CPU training (on a 16GB memory PC), you can generate Shakespeare-like text. It’s guaranteed to impress!
