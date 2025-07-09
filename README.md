@@ -14,7 +14,8 @@ Let's make nano-GPT model!😎<br>
 This tutorial gives you clear explanations and **over 100 fill-in-the-blank questions!🫨** <br>
 Perfect for ealry birds who want to change their interests into real growth.<br>
 If you meet the prerequisites, you can finish in 12–18 hours.<br>
-Everything runs in Google Colab. This tutorial is based on [Andrej Karpathy’s nano-GPT](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing). <br> 
+Everything runs in Google Colab. This tutorial is based on [Andrej Karpathy’s nano-GPT](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing). <br>
+I'd like to express my deepest gratitude for his work.
 
 
 ## Table of Contents
