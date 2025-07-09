@@ -36,7 +36,7 @@ I'd like to express my deepest gratitude for his work.
 | Chapter 12: Trainer            | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter12_TODO.ipynb) |
 
 ## **Demo output**
-![nanoGPT_demo_output](assets/nanoGPT_demo_output.png)
+![nanoGPT_demo_output](assets/Everyones_nanoGPT_demo_output.png)
 
 ## **Tensor Map**
 To understand fully, you have to map the tensors by yourself.
