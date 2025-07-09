@@ -1,5 +1,3 @@
-![EveryonesAI Logo](assets/EveryonesAI_logo.png)
-
 
 | Chapter  | Notebook  |
 |---|---|
@@ -17,7 +15,7 @@
 | Chapter 11:  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter11_TODO.ipynb) |
 | Chapter 12:  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter12_TODO.ipynb) |
 
-
+![EveryonesAI Logo](assets/EveryonesAI_logo.png)
 ![EveryonesAI Goal](assets/EveryonesAI_goal.png)
 ![EveryonesAI Idea](assets/EveryonesAI_idea.png)
 ![EveryonesAI Prerequites](assets/EveryonesAI_prerequites.png)
