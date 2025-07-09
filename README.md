@@ -39,7 +39,9 @@ I'd like to express my deepest gratitude for his work.
 ![nanoGPT_demo_output](assets/Everyones_nanoGPT_demo_output.png)
 
 ## **Tensor Map**
-To understand fully, you have to map the tensors by yourself.
+To understand fully, you have to map the tensors by yourself.<br>
+[View the full-resolution Tensor Map of nanoGPT model on Canva.](https://www.canva.com/design/DAGskS8QP6k/1zs7IklaMrB_LncHn2I8pA/edit?utm_content=DAGskS8QP6k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)<br>
+
 ![Everyones TensorMap](assets/Everyones_nanoGPT_TensorMap_answer.png)
 
 
