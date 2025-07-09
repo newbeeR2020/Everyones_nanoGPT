@@ -1,2 +1,0 @@
-# disabel git-lfs to make .ipynb files aligned for google colab
-# *.ipynb filter=lfs diff=lfs merge=lfs -text
