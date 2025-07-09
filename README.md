@@ -44,14 +44,6 @@ I'd like to express my deepest gratitude for his work.
 
 ![Everyones TensorMap](assets/Everyones_nanoGPT_TensorMap_answer.png)
 
-
-![EveryonesAI Logo](assets/EveryonesAI_logo.png)
-![EveryonesAI Goal](assets/EveryonesAI_goal.png)
-![EveryonesAI Idea](assets/EveryonesAI_idea.png)
-![EveryonesAI Prerequites](assets/EveryonesAI_prerequites.png)
-![EveryonesAI Plan](assets/EveryonesAI_plan.png)
-
-
 ## **Prerequisites**
 
 **Understanding**  
@@ -98,3 +90,10 @@ Usually, your installed PyTorch will just work.<br>
  If you hit issues, you can set up a virtual environment using `requirements.txt`.<br>
 Or, if you use Docker Desktop, you can use the included `Dockerfile` and Dev Container extension for an even more stable setup.
 
+## **About Project EveryonesAI**
+
+![EveryonesAI Logo](assets/EveryonesAI_logo.png)
+![EveryonesAI Goal](assets/EveryonesAI_goal.png)
+![EveryonesAI Idea](assets/EveryonesAI_idea.png)
+![EveryonesAI Prerequites](assets/EveryonesAI_prerequites.png)
+![EveryonesAI Plan](assets/EveryonesAI_plan.png)
