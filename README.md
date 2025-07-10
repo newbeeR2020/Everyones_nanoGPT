@@ -81,10 +81,6 @@ If you want to save your progress with checkbox marks, VS Code is a great choice
 It’s also handy if you like to work in small bursts, such as 30 minutes at a time.<br> 
 In that case, fork and clone this repo to your own computer.<br>
 
-```
-git clone https://github.com/HayatoHongo/Everyones_nanoGPT.git
-```
-
 Python 3.12 and PyTorch 2.6.0 work best, but most versions are fine.<br> 
 Usually, your installed PyTorch will just work.<br>
  If you hit issues, you can set up a virtual environment using `requirements.txt`.<br>
