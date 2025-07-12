@@ -1,6 +1,8 @@
 # **Everyones_nanoGPT fill-in-the-blank notebook Tutorial**
 
-🌐 Select Language / [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT_ja.git) | [中文](README.chinese.md)<br>
+🌐 Select Language / [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT_ja.git) | [中文](README.chinese.md)
+| [Others](README.otherlanguages.md)
+<br>
 
 > This is a complete guide for those who love ChatGPT and want to build their own.<br>
 > You type "Hello," and it replies, "How can I help you today?"<br>
