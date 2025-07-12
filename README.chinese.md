@@ -1,6 +1,6 @@
 # **Everyones_nanoGPT 填空笔记教程**
 
-🌐 选择语言 / [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT_ja.git) | [中文](README.chinese.md)<br>
+🌐 选择语言 / [日本語 🇯🇵 ](https://github.com/HayatoHongo/Everyones_nanoGPT_ja.git) | [中文 🇨🇳](README.chinese.md)<br>
 
 > 这是为热爱 ChatGPT 并想自己动手搭建专属模型的人准备的完整指南。<br>
 > 你输入 “Hello,”，它回复 “今天我能为你做些什么？”<br>
