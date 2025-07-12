@@ -21,6 +21,7 @@ I'd like to express my deepest gratitude for his work.
 
 
 ## Table of Contents
+You can translate the notebooks to almost any language on earth with this [notebook translator.](README.otherlanguages.md)
 | Chapter  | Estimated Time | English 🇺🇸 | 中文 🇨🇳 | 日本語 🇯🇵 |
 |---|---|---|---|---|
 | Chapter 00: Start Tutorial      | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter00_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter00_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter00_TODO_ja.ipynb) |
