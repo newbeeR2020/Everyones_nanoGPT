@@ -12,6 +12,9 @@
 > Every time I read an excited comment from a student,<br>
 > I feel that those days in that tiny seat had a big meaning.<br>  
 
+## **Demo output**
+![nanoGPT_demo_output](assets/Everyones_nanoGPT_demo_output.png)
+
 Let's make nano-GPT model!😎<br>
 This tutorial gives you clear explanations and **over 100 fill-in-the-blank questions!🫨** <br>
 Perfect for ealry birds who want to change their interests into real growth.<br>
@@ -22,6 +25,7 @@ I'd like to express my deepest gratitude for his work.
 
 ## Table of Contents
 You can translate the notebooks to almost any language on earth with this [notebook translator.](README.otherlanguages.md)
+
 | Chapter  | Estimated Time | English 🇺🇸 | 中文 🇨🇳 | 日本語 🇯🇵 |
 |---|---|---|---|---|
 | Chapter 00: Start Tutorial      | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter00_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter00_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter00_TODO_ja.ipynb) |
@@ -39,8 +43,7 @@ You can translate the notebooks to almost any language on earth with this [noteb
 | Chapter 12: Trainer            | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter12_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter12_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter12_TODO_ja.ipynb) |
 
 
-## **Demo output**
-![nanoGPT_demo_output](assets/Everyones_nanoGPT_demo_output.png)
+
 
 ## **Tensor Map**
 **You must create the following Tensor Map by yourself!** There are plenty of hints, so don't worry.<br>

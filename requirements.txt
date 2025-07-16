@@ -1,2 +1,2 @@
 torch==2.6.0
-ipykernel
+ipykernel==6.29.5
