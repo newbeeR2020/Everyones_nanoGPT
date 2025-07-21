@@ -1,6 +1,6 @@
 # **Everyones_nanoGPT fill-in-the-blank notebook Tutorial**
 
-🌐 Select Language / [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT_ja.git) | [中文](README.chinese.md)
+🌐 Select Language / [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT/tree/ja) | [中文](README.chinese.md)
 | [Others](README.otherlanguages.md)
 <br>
 
