@@ -27,7 +27,7 @@
 তাঁর প্রতি আমার গভীর কৃতজ্ঞতা।
 
 
-## Table of Contents
+## বিষয়বস্তু তালিকা
 এই [notebook translator-এ](README.otherlanguages.md) পুরো এক্সপেরিমেন্ট পৃথিবীর প্রায় যেকোনো ভাষায় অনুবাদ করা যায়।
 
 🌐 ভাষা বেছে নিন /
@@ -37,21 +37,22 @@
 [Others](README.otherlanguages.md)
 
 
-| Chapter  | আনুমানিক সময় | বাংলা 🇧🇩 |
+| অধ্যায়  | আনুমানিক সময় | বাংলা 🇧🇩 |
 |---|---|---|
-| Chapter 00: Start Tutorial      | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter00_todo_bn.ipynb) |
-| Chapter 01: Dataloader         | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter01_todo_bn.ipynb) |
-| Chapter 02: TokenEmbedding     | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter02_todo_bn.ipynb) |
-| Chapter 03: PositionEmbedding  | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter03_todo_bn.ipynb) |
-| Chapter 04: EmbeddingModule    | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter04_todo_bn.ipynb) |
-| Chapter 05: LayerNorm          | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter05_todo_bn.ipynb) |
-| Chapter 06: AttentionHead      | ৩-৪ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter06_todo_bn.ipynb) |
-| Chapter 07: MultiHeadAttention | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter07_todo_bn.ipynb) |
-| Chapter 08: FeedForward        | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter08_todo_bn.ipynb) |
-| Chapter 09: TransformerBlock   | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter09_todo_bn.ipynb) |
-| Chapter 10: VocabularyLogits   | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter10_todo_bn.ipynb) |
-| Chapter 11: BigramLanguageModel| ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter11_todo_bn.ipynb) |
-| Chapter 12: Trainer            | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter12_todo_bn.ipynb) |
+| Chapter 00: Start Tutorial      | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter00_todo_bn.ipynb) |
+| Chapter 01: Dataloader         | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter01_todo_bn.ipynb) |
+| Chapter 02: TokenEmbedding     | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter02_todo_bn.ipynb) |
+| Chapter 03: PositionEmbedding  | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter03_todo_bn.ipynb) |
+| Chapter 04: EmbeddingModule    | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter04_todo_bn.ipynb) |
+| Chapter 05: LayerNorm          | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter05_todo_bn.ipynb) |
+| Chapter 06: AttentionHead      | ৩-৪ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter06_todo_bn.ipynb) |
+| Chapter 07: MultiHeadAttention | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter07_todo_bn.ipynb) |
+| Chapter 08: FeedForward        | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter08_todo_bn.ipynb) |
+| Chapter 09: TransformerBlock   | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter09_todo_bn.ipynb) |
+| Chapter 10: VocabularyLogits   | ০.৫-১ ঘণ্টা  | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter10_todo_bn.ipynb) |
+| Chapter 11: BigramLanguageModel| ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter11_todo_bn.ipynb) |
+| Chapter 12: Trainer            | ১-২ ঘণ্টা    | [![কলাবে খুলুন](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/bn/notebooks/todo/Everyones_nanoGPT_colab_Chapter12_todo_bn.ipynb) |
+
 
 
 
