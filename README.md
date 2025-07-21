@@ -1,102 +1,110 @@
-# **Everyones_nanoGPT fill-in-the-blank notebook Tutorial**
+# **Everyones_nanoGPT 穴埋めノートブック・チュートリアル**
 
-🌐 Select Language / [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT_ja.git) | [中文](README.chinese.md)
-| [Others](README.otherlanguages.md)
-<br>
+これは、「ChatGPTが好き！」「自分でも作ってみたい！」という人のための完全ガイドです。  
+「Hello」と打てば「今日はどうしましたか？」と返してくれる。  
+それが実は、ただの足し算掛け算と少しの非線形の積み重ねで動いていると知ったとき、
+ワクワクして夜も眠れなくなる――  
+ようこそ、ディープラーニングの世界へ。もう元には戻れません。  
+このガイドは、毎日南北線のぎゅうぎゅうの席で、通学中に書きました。  
+学生さんたちから「できた！」というコメントが届くたび、
+あの狭い席で過ごした時間に大きな意味があったんだなぁと感じています。
 
-> This is a complete guide for those who love ChatGPT and want to build their own.<br>
-> You type "Hello," and it replies, "How can I help you today?"<br>
-> When you realize this runs on simple math, your heart races. You cannot sleep.<br>
-> Welcome to deep learning. There is no way back.<br>
-> I wrote this guide on the train to school, squeezed into a tiny seat on the Nanboku Line.<br>
-> Every time I read an excited comment from a student,<br>
-> I feel that those days in that tiny seat had a big meaning.<br>  
+---
 
-## **Demo output**
+さあ、一緒にnano-GPTモデルを作ろう！😎  
+このチュートリアルでは、わかりやすい解説と**100問以上の穴埋め問題🫨**を用意しています。  
+「ちょっとLLM作りたいからやってみたい」――そんな人が本気で力をつけられる内容です。  
+必要な予備知識があれば、12〜18時間で修了可能！  
+すべてGoogle Colab上で動かせます。  
+このチュートリアルは[Andrej Karpathyさんのnano-GPT](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing)をベースにしています。  
+この場を借りて、心から感謝します。
+
+---
+
+## 目次
+| チャプター  | 推定所要時間 | ノートブック  |
+|---|---|---|
+| Chapter 00: Start Tutorial      | 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter00_TODO_ja.ipynb) |
+| Chapter 01: Dataloader         | 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter01_TODO_ja.ipynb) |
+| Chapter 02: TokenEmbedding     | 0.5〜1時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter02_TODO_ja.ipynb) |
+| Chapter 03: PositionEmbedding  | 0.5〜1時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter03_TODO_ja.ipynb) |
+| Chapter 04: EmbeddingModule    | 0.5〜1時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter04_TODO_ja.ipynb) |
+| Chapter 05: LayerNorm          | 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter05_TODO_ja.ipynb) |
+| Chapter 06: AttentionHead      | 3〜4時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter06_TODO_ja.ipynb) |
+| Chapter 07: MultiHeadAttention | 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter07_TODO_ja.ipynb) |
+| Chapter 08: FeedForward        | 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter08_TODO_ja.ipynb) |
+| Chapter 09: TransformerBlock   | 0.5〜1時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter09_TODO_ja.ipynb) |
+| Chapter 10: VocabularyLogits   | 0.5〜1時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter10_TODO_ja.ipynb) |
+| Chapter 11: BigramLanguageModel| 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter11_TODO_ja.ipynb) |
+| Chapter 12: Trainer            | 1〜2時間 | [![Colabで開く](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter12_TODO_ja.ipynb) |
+
+
+## **デモ出力例**
 ![nanoGPT_demo_output](assets/Everyones_nanoGPT_demo_output.png)
 
-Let's make nano-GPT model!😎<br>
-This tutorial gives you clear explanations and **over 100 fill-in-the-blank questions!🫨** <br>
-Perfect for ealry birds who want to change their interests into real growth.<br>
-If you meet the prerequisites, you can finish in 12–18 hours.<br>
-Everything runs in Google Colab. This tutorial is based on [Andrej Karpathy’s nano-GPT](https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing). <br>
-I'd like to express my deepest gratitude for his work.
+---
 
-
-## Table of Contents
-You can translate the notebooks to almost any language on earth with this [notebook translator.](README.otherlanguages.md)
-
-| Chapter  | Estimated Time | English 🇺🇸 | 中文 🇨🇳 | 日本語 🇯🇵 |
-|---|---|---|---|---|
-| Chapter 00: Start Tutorial      | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter00_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter00_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter00_TODO_ja.ipynb) |
-| Chapter 01: Dataloader         | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter01_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter01_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter01_TODO_ja.ipynb) |
-| Chapter 02: TokenEmbedding     | 0.5-1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter02_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter02_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter02_TODO_ja.ipynb) |
-| Chapter 03: PositionEmbedding  | 0.5-1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter03_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter03_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter03_TODO_ja.ipynb) |
-| Chapter 04: EmbeddingModule    | 0.5-1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter04_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter04_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter04_TODO_ja.ipynb) |
-| Chapter 05: LayerNorm          | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter05_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter05_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter05_TODO_ja.ipynb) |
-| Chapter 06: AttentionHead      | 3-4 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter06_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter06_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter06_TODO_ja.ipynb) |
-| Chapter 07: MultiHeadAttention | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter07_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter07_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter07_TODO_ja.ipynb) |
-| Chapter 08: FeedForward        | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter08_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter08_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter08_TODO_ja.ipynb) |
-| Chapter 09: TransformerBlock   | 0.5-1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter09_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter09_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter09_TODO_ja.ipynb) |
-| Chapter 10: VocabularyLogits   | 0.5-1 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter10_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter10_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter10_TODO_ja.ipynb) |
-| Chapter 11: BigramLanguageModel| 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter11_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter11_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter11_TODO_ja.ipynb) |
-| Chapter 12: Trainer            | 1-2 hour | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/Everyones_nanoGPT_colab_Chapter12_TODO.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT/blob/main/Everyones_nanoGPT_TODO/TODO_chinese/Everyones_nanoGPT_colab_Chapter12_TODO_ch.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HayatoHongo/Everyones_nanoGPT_ja/blob/main/Everyones_nanoGPT_TODO_ja/Everyones_nanoGPT_colab_Chapter12_TODO_ja.ipynb) |
-
-
-
-
-## **Tensor Map**
-**You must create the following Tensor Map by yourself!** There are plenty of hints, so don't worry.<br>
-[View the full-resolution Tensor Map of nanoGPT model on Canva.](https://www.canva.com/design/DAGskS8QP6k/1zs7IklaMrB_LncHn2I8pA/edit?utm_content=DAGskS8QP6k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)<br>
+## **Tensor Map（テンソル全体図）**
+**下のテンソルマップを自分で作ってみよう！**  
+ヒントもたくさん用意しているので安心してください。  
+[CanvaでnanoGPTモデルのフル解像度Tensor Mapを見る](https://www.canva.com/design/DAGskS8QP6k/1zs7IklaMrB_LncHn2I8pA/edit?utm_content=DAGskS8QP6k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ![Everyones TensorMap](assets/Everyones_nanoGPT_TensorMap_answer.png)
 
-## **Prerequisites**
+---
 
-**Understanding**  
-- Understand matrix multiplication and addition  
-- Understand mean and variance  
-- Understand ResNet’s residual connections  
-- Understand Word2Vector  
-<br>  
-<br>  
+## **前提知識・スキル**
 
-**Experience**  
-- Have built an MNIST digit recognition model using Pytorch’s.
-- Have used cross-entropy as a loss function in digit recognition models like the above  
-- Have implemented mini-batch processing and batch normalization  
-- Have implemented an autoencoder or VAE
+**理解してほしいこと**  
+- 行列の掛け算と足し算  
+- 平均値と分散  
+- ResNetの残差接続（residual connection）  
+- Word2Vectorの仕組み  
 
-We are also working hard to release fun, entry-level tutorials for those who have never used PyTorch or programming by 2025.8.30.
+**ほぼ必須の経験**  
+- PyTorchでMNISTの数字認識モデルを作ったことがある  
+- 上のようなモデルでクロスエントロピーを損失関数に使ったことがある  
+- ミニバッチ処理やバッチ正規化（batch normalization）を実装したことがある  
+- オートエンコーダやVAEを作ったことがある  
 
-## **Model**
+---
 
-It uses a bigram model, where each token is just one character.<br> 
-Also, the internal structure is very simple.<br>  
-The training text dataset is Shakespeare’s writings. Since they are very old, they are copyright-free.<br>
+PyTorchやプログラミングが初めての人向けにも、前提条件を満たすための2025年8月30日までに楽しい入門チュートリアルを準備中です！
 
-Compared to the real GPT-2, it’s quite basic. But start here to master the GPT basics.<br>  
-In just 2-4 minutes of CPU training (on a 16GB memory PC), you can generate Shakespeare-like text.<br> 
-It’s guaranteed to impress!<br>
+---
 
-## **Development Environment**
+## **モデルについて**
 
-To keep setup simple, try running all examples in Google Colab.<br>
+このチュートリアルで使うのは、1文字＝1トークンという超シンプルな「バイグラムモデル」です。  
+内部構造もかなり単純になっています。  
+学習データセットはShakespeare（シェイクスピア）のテキスト。とても古いので著作権フリーです。
 
-However, Google Colab doesn't save the checkbox marks.<br>
-If you want to save your progress with checkbox marks, VS Code is a great choice.<br> 
-It’s also handy if you like to work in small bursts, such as 30 minutes at a time.<br> 
-In that case, fork and clone this repo to your own computer.<br>
+本物のGPT-2と比べると、ものすごく基本的な内容ですが、「基礎から学んで本物を目指す」にはこれがベスト。  
+16GBメモリのPCなら、たった2〜4分のCPU学習だけでシェイクスピアっぽい文章が出てきます！  
+きっと感動するはず！
 
-Python 3.12 and PyTorch 2.6.0 work best, but most versions are fine.<br> 
-Usually, your installed PyTorch will just work.<br>
- If you hit issues, you can set up a virtual environment using `requirements.txt`.<br>
-Or, if you use Docker Desktop, you can use the included `Dockerfile` and Dev Container extension for an even more stable setup.
+---
 
-## **About Project EveryonesAI**
+## **開発環境について**
 
-![EveryonesAI Logo](assets/EveryonesAI_logo.png)
-![EveryonesAI Goal](assets/EveryonesAI_goal.png)
-![EveryonesAI Idea](assets/EveryonesAI_idea.png)
-![EveryonesAI Prerequites](assets/EveryonesAI_prerequites.png)
+セットアップの手間を減らすため、サンプルはすべてGoogle Colab上で動かしてみてください。
+
+ただしGoogle Colabでは、チェックボックスのマークが保存されません。  
+進捗管理をしたい人や、30分ごとなど「ちょっとずつ進めたい」人には、VS Codeがおすすめです。  
+その場合は、このリポジトリをforkして、自分のPCにcloneしてください。
+
+
+Python 3.12 & PyTorch 2.6.0がベストですが、たいていは他のバージョンでも動きます。  
+普通は、今インストールしているPyTorchでOK！  
+もし動かない場合は `requirements.txt` で仮想環境を作ると良いです。  
+Docker Desktopを使っている場合は、同梱の`Dockerfile`やDev Container拡張でさらに安定した環境を作れます。
+
+---
+
+## **Project EveryonesAIについて**
+
+![EveryonesAI Logo](assets/EveryonesAI_logo.png)  
+![EveryonesAI Goal](assets/EveryonesAI_goal.png)  
+![EveryonesAI Idea](assets/EveryonesAI_idea.png)  
+![EveryonesAI Prerequites](assets/EveryonesAI_prerequites.png)  
 ![EveryonesAI Plan](assets/EveryonesAI_plan.png)
