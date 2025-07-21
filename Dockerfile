@@ -8,7 +8,7 @@ RUN apt-get update \
 # Set working directory
 WORKDIR /workspace
 
-# Upgrade pip to latest stable (25.1.1) and install JupyterLab (4.4.5)
+# Upgrade pip to latest stable (25.1.1) and install JupyterLab (4.4.3)
 RUN python -m pip install --upgrade pip==25.1.1 \
   && pip install \
        jupyterlab==4.4.3 \
