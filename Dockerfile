@@ -8,12 +8,12 @@ RUN apt-get update \
 # Set working directory
 WORKDIR /workspace
 
-# Upgrade pip and install JupyterLab
-RUN pip install --upgrade pip && pip install jupyterlab
-
-# Install Python packages
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# Upgrade pip to latest stable (25.1.1) and install JupyterLab (4.4.5)
+RUN python -m pip install --upgrade pip==25.1.1 \
+  && pip install \
+       jupyterlab==4.4.3 \
+       torch==2.6.0 \
+       ipykernel==6.29.5
 
 # Register Jupyter kernel (use a clear, friendly name!)
 RUN python -m ipykernel install --sys-prefix --name "nanogpt312" --display-name "NanoGPT Python 3.12"
