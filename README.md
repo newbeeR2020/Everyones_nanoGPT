@@ -29,8 +29,8 @@ I'd like to express my deepest gratitude for his work.
 
 ## Table of Contents
 You can translate the notebooks to almost any language on earth with this [notebook translator.](README.otherlanguages.md)<br>
-You cannot translate the images and diagrams with the above translator. I tried to use as simple English as possible,<br>
-still I greatly appreciate your effort if you would like to manually translate images. The link to the images are provided [here.](https://www.canva.com/design/DAGw0J7yCsE/xdcjITCHd02iLSUMw8wlXA/edit?utm_content=DAGw0J7yCsE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton). 
+I couldn’t translate the images with the tool, and I’d really appreciate your help translating the [images](https://www.canva.com/design/DAGw0J7yCsE/xdcjITCHd02iLSUMw8wlXA/edit?utm_content=DAGw0J7yCsE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).<br>
+
 
 🌐 Select Language /
 <img src="https://flagcdn.com/24x18/jp.png" width="20"/> [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT/tree/ja) |
