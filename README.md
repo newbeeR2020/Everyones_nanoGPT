@@ -1,11 +1,15 @@
-# **Everyones_nanoGPT fill-in-the-blank notebook Tutorial**
+# **Everyones_nanoGPT - Build LLM from scratch on Colab**
+
+<div align="center">
+  <img src="assets/Google_Colaboratory_SVG_Logo.svg.png" alt="Google Colab Logo" width="150" style="margin-bottom:0;">
+  <h3 style="margin-top:1px;">Support Free Google Colab account!</h3>
+</div>
 
 🌐 Select Language /
 <img src="https://flagcdn.com/24x18/jp.png" width="20"/> [日本語](https://github.com/HayatoHongo/Everyones_nanoGPT/tree/ja) |
 <img src="https://flagcdn.com/24x18/cn.png" width="20"/> [中文](https://github.com/HayatoHongo/Everyones_nanoGPT/tree/ch) /
 <img src="https://flagcdn.com/24x18/bd.png" width="20"/> [বাংলা](https://github.com/HayatoHongo/Everyones_nanoGPT/tree/bn) |
 [Others](README.otherlanguages.md)
-
 <br>
 
 > This is a complete guide for those who love ChatGPT and want to build their own.<br>
